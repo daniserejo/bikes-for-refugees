@@ -60,6 +60,11 @@ p {
 
 /* Navigation */
 
+.top-space {
+  margin: 5px;
+  padding: 10px;
+}
+
 .navigation__list {
   display: flex;
   list-style: none;
@@ -74,6 +79,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 1rem;
 }
 
 
@@ -97,6 +103,30 @@ p {
 
   /* INSERT BUTTON STYLES HERE */
 
+  button {
+    background-color: #ce5f31;
+    color: #e4e4e4;
+    border: 1px solid transparent;
+    padding: 0.5em;
+    margin: 5px 5px 40px 20px;
+  
+  }
+  
+  button:hover, 
+  button:focus {
+    background: #ef7f52;
+  }
+  
+  .button-volunteer {
+    background-color:  white;
+    color: #ce5f31;
+    margin-left: 3px;
+  }
+  
+  .button-volunteer:hover,
+  .button-volunteer:focus {
+    background-color: rgb(179, 221, 162);
+  }
 
 /* Content */
 
@@ -120,18 +150,25 @@ p {
 /* hero */
 
 .hero {
-  background-image: url("header-bike.jpg");
+  background-image: url(/images/header-bike.jpg);
   background-color: var(--grey-light);
+  height: 330px;
+  width: 100%;
 }
 
 .hero h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
+  color: #e4e4e4;
+  padding-left: 19px;
+  padding-top: 70px;
 }
 
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  color: #e4e4e4;
+  padding-left: 19px;
 }
 
 
@@ -141,6 +178,8 @@ p {
   position: relative;
   margin-bottom: 2rem;
   padding-bottom: 0.5rem;
+  margin-top: 40px;
+  padding-top: 10px;
   border-bottom: 2px solid var(--orange-light);
   font-size: 1rem;
   font-weight: 600;
@@ -163,7 +202,22 @@ p {
 
 .article {
   margin-bottom: 1rem;
+  border: 1px solid rgb(174, 170, 170);
+  padding-left: 5px;
+  padding-top: 10px;
+  margin: 6px;
+  margin-left: 0px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-right: 9px;
+  width: 50%;
 }
+
+.article-box {
+  display: flex;
+  padding: 10px;
+}
+
 
 .article__title {
   margin-bottom: 0.5rem;
@@ -179,11 +233,13 @@ p {
 .article__summary {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .article__thumbnail {
   object-fit: contain;
   width: 5rem;
+  padding: 16px;
 }
 
 .article__read-more {
@@ -209,6 +265,7 @@ p {
 
 .facebook-link {
   color: var(--orange-dark);
+  margin-left: 193px;
 }
 
 /* Sidebar */
@@ -217,6 +274,21 @@ p {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+}
+
+.left-cards {
+  display: flex;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(174, 170, 170);
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 9px;
+  align-items: center;
+}
+
+.sidebar-content {
+  padding: 2px;
 }
 
 /* Footer */
